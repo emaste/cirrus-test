@@ -7,13 +7,13 @@ task:
     image_project: freebsd-org-cloud-dev
     platform: freebsd
   matrix:
-    - name: freebsd15-amd64
+    - name: freebsd15-0-stable-amd64
       freebsd_instance:
          image: freebsd-15-0-stable-amd64-ufs-20251113
-    - name: freebsd14-amd64
+    - name: freebsd14-3-release-amd64
       freebsd_instance:
          image: freebsd-14-3-release-amd64-ufs
-    - name: freebsd13-amd64
+    - name: freebsd13-5-release-amd64
       freebsd_instance:
          image: freebsd-13-5-release-amd64
   src_script:
