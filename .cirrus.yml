@@ -1,0 +1,20 @@
+env:
+  CIRRUS_CLONE_DEPTH: 1
+  ARCH: amd64
+
+task:
+  compute_engine_instance:
+    image_project: freebsd-org-cloud-dev
+    platform: freebsd
+  matrix:
+    - name: freebsd15-amd64
+      freebsd_instance:
+         image: freebsd-15-0-stable-amd64-ufs-20251113
+    - name: freebsd14-amd64
+      freebsd_instance:
+         image: freebsd-14-3-release-amd64-ufs
+    - name: freebsd13-amd64
+      freebsd_instance:
+         image: freebsd-13-5-release-amd64
+  src_script:
+    - test -f /usr/src/Makefile
