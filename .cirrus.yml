@@ -7,9 +7,9 @@ task:
     image_project: freebsd-org-cloud-dev
     platform: freebsd
   matrix:
-    - name: freebsd15-0-stable-amd64
+    - name: freebsd15-0-release-amd64
       freebsd_instance:
-         image: freebsd-15-0-stable-amd64-ufs-20251113
+         image: freebsd-15-0-rc2-amd64-ufs
     - name: freebsd14-3-release-amd64
       freebsd_instance:
          image: freebsd-14-3-release-amd64-ufs
