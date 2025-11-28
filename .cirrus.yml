@@ -9,7 +9,7 @@ task:
   matrix:
     - name: freebsd15-0-release-amd64
       freebsd_instance:
-         image: freebsd-15-0-rc2-amd64-ufs
+         image: freebsd-15-0-release-amd64-ufs
     - name: freebsd14-3-release-amd64
       freebsd_instance:
          image: freebsd-14-3-release-amd64-ufs
